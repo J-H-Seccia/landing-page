@@ -121,6 +121,13 @@ a:focus {
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #282828;
+	background-color: #ddd;
+	transition: 0.3s;
+}
+
+.site-navigation a:hover {
+	background-color: #282828;
+	color:#ddd;
 }
 
 .menu-toggle {
@@ -201,6 +208,16 @@ a:focus {
 .section-about {
 	max-width: 50rem;
 	margin: 3rem auto 4rem;
+	border-bottom: solid 4px;
+}
+
+.section-about img {
+	max-width: 15rem;
+	max-height: 15rem;
+	object-fit: fill;
+	border-radius: 2rem;
+	display: flex;
+	margin: 0 auto;
 }
 
 .section-about h2 {
@@ -210,18 +227,27 @@ a:focus {
 
 .section-about p {
 	font-size: 1.125rem;
-	line-height: 2;
+	line-height: 1.5;
+	font-weight: 500;
 }
 
-/* Section: Products */
-.product {
+/* Section: Projects */
+
+.section-projects h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.projects-wrapper p {
+	font-size: 1.125rem;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+.project {
 	max-width: 18.75rem;
 	margin: 2rem auto;
-	box-shadow: 0px 0px 3px 2px #eee;
-}
-
-.product-text {
-	padding: 1rem;
+	box-shadow: 0px 0px 3px 2px #ddd;
 }
 
 .product-name {
@@ -249,11 +275,11 @@ a.product-link:focus {
 
 @media (min-width: 50em) {
 
-	.section-products {
+	.section-projects {
 		display: flex;
 	}
 
-	.products-wrapper {
+	.projects-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
