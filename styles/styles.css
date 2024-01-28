@@ -76,7 +76,6 @@ a:focus {
 # Components
 --------------------------------------------------------------*/
 .site-wrapper {
-	/* This is for very large screens */
 	max-width: 120rem;
 	margin: 0 auto;
 }
@@ -90,13 +89,12 @@ a:focus {
 	justify-content: space-between;
 }
 
-a.site-name {
-	font-family: Georgia, Times, "Times New Roman", serif;
-	font-size: 2rem;
-	font-weight: 700;
-	text-decoration: none;
-	color: #282828;
+.brand-logo {
+	z-index: 3;
+	display: flex;
+	max-height: 5rem;
 }
+
 
 .site-navigation ul {
 	list-style: none;
@@ -105,7 +103,7 @@ a.site-name {
 	text-align: center;
 	display: none;
 	position: absolute;
-	top: 4.5rem;  /* Matches the height of the .site-header */
+	top: 4.5rem;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -151,13 +149,13 @@ a.site-name {
 	.site-navigation ul,
 	.site-navigation.toggled ul {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		position: relative;
 		top: 0;
 	}
 
 	.site-navigation a {
-		line-height: 4.5rem; /* Matches the height of the .site-header */
+		line-height: 4.5rem;
 		padding: 0 1rem;
 	}
 
@@ -172,6 +170,7 @@ a.site-name {
 }
 
 .page-header h1 {
+	font-family: 'Comfortaa', Times, "Times New Roman", sans-serif;
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -181,7 +180,6 @@ a.site-name {
 	margin: 0;
 	font-size: 3rem;
 	color: #fff;
-	text-transform: uppercase;
 	text-align: center;
 }
 
