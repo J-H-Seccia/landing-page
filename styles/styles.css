@@ -57,7 +57,7 @@ section {
 --------------------------------------------- */
 a,
 a:visited { 
-	color: #FF9843;
+	color: #EF4040;
 	text-decoration: none;
 }
 
@@ -194,18 +194,29 @@ a:focus {
 	font-size: 3rem;
 	color: #fff;
 	text-align: center;
+	transition: 0.3s;
 }
 
 .page-header img {
 	display: block;
 	object-fit: cover;
 	min-height: 25rem;
+	transition: 0.3s;
 }
 
 @media (min-width: 50em) {
 
 	.page-header h1 {
 		font-size: 5rem;
+		transition: 0.3s;
+	}
+
+	.page-header h1:hover {
+		font-size: 6rem;
+	}
+
+	.page-header img:hover {
+		opacity: 0.9;
 	}
 	
 }
@@ -242,6 +253,7 @@ a:focus {
 
 .section-projects {
 	background-color: #FF9843;
+	margin: 3rem auto 4rem;
 	padding-bottom: 1.5rem;
 }
 
@@ -251,16 +263,38 @@ a:focus {
 	text-align: center;
 }
 
-.projects-wrapper p {
+.section-projects p {
 	font-size: 1.125rem;
 	line-height: 1.5;
 	font-weight: 500;
+	text-align: center;
 }
 
 .project {
 	max-width: 18.75rem;
 	margin: 2rem auto;
 	box-shadow: 0px 0px 5px 3px #EF4040;
+	transition: 0.3s;
+}
+
+@media (min-width: 50em) {
+
+	.projects-header {
+		max-width: 50rem;
+		margin: 0 auto;
+	}
+
+	.projects-wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.project:hover {
+		transform: scale(1.1);
+		
+	}
+	
 }
 
 /* Section: Music */
@@ -275,6 +309,7 @@ a:focus {
 	font-size: 1.125rem;
 	line-height: 1.5;
 	font-weight: 500;
+	text-align: center;
 }
 
 .song {
@@ -283,31 +318,12 @@ a:focus {
 	box-shadow: 0px 0px 5px 3px #EF4040;
 }
 
-
-
-
 @media (min-width: 50em) {
-
-	.section-projects {
+	.songs-wrapper {
 		display: flex;
 	}
-
-	.projects-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.product {
-		margin: 1rem;
-	}
-
-	.products-sidebar {
-		width: 18%;
-		order: -1;
-	}
-
 }
+
 
 
 /* Footer
@@ -317,17 +333,12 @@ a:focus {
 	padding: 1rem;
 }
 
-.site-footer nav ul {
-	list-style: none;
-	padding: 0;
-}
-
 @media (min-width: 50em) {
 
 	.site-footer {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.site-footer p {
